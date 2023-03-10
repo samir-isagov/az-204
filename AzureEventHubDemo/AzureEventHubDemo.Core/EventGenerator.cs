@@ -16,7 +16,7 @@ public static class EventGenerator
         Priority = 1,
         AccountId = Guid.NewGuid(),
         TimeStamp = DateTime.UtcNow,
-        SensorMessage = generatedEvents + new string('*', 10000)
+        SensorMessage = generatedEvents + new string('*', 10000) + generatedEvents
       };
     }
   }
